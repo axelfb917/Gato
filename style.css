@@ -1,0 +1,56 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background: #f0f4f8;
+  margin: 0;
+  padding: 2rem;
+}
+
+h1 {
+  color: #333;
+}
+
+.mode button {
+  margin: 0.5rem;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  gap: 10px;
+  justify-content: center;
+  margin: 1.5rem auto;
+}
+
+.cell {
+  width: 100px;
+  height: 100px;
+  background: white;
+  border: 2px solid #ccc;
+  font-size: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.cell:hover {
+  background: #e0e7ff;
+}
+
+.status {
+  font-size: 1.2rem;
+  margin-top: 1rem;
+  font-weight: bold;
+}
+
+.reset {
+  padding: 0.6rem 1.2rem;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-top: 1rem;
+}
